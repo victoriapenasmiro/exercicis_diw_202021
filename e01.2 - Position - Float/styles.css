@@ -1,0 +1,62 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+}
+
+header {
+    position: relative;
+    background: #9acd32;
+    z-index: 1;
+    height: 100px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 25px;
+    left: 0;
+}
+
+ul#menu {
+    position: absolute;
+    margin-top: 30px; /*¿Porque tengo que poner aquí un margin top de 30 y en la imagen del header solo 25px ?*/
+    padding: 0;
+    justify-content: center;
+}
+
+ul#menu li {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+}
+
+div {
+    position: relative;
+    border: 1px solid green;
+}
+
+div>h1 {
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    margin-left: 450px;
+    margin-top: -150px;
+}
+
+div{
+    margin: 10%;
+    margin-left: 5%;
+    min-width: 400px;
+}
+
+img#scissors {
+    position: absolute;
+}
