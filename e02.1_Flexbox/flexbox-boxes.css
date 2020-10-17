@@ -1,0 +1,141 @@
+.container {
+  background-color: black;
+  width: 450px;
+  height: 300px;
+  margin: 20px 2px;
+}
+
+.container div {
+  color: white;
+  background-color: blue;
+
+  font-size: 25px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+
+  margin:10px;
+  padding: 20px 30px;
+}
+
+
+/**
+CONTAINER C01
+**/
+.c01 {
+/********* ADD YOUR CODE  HERE **********/
+display: flex;
+align-items: center;
+justify-content: center;
+/********* END OF YOUR CODE **********/
+}
+.c01 div {
+  background-color: red;
+}
+
+
+/**
+CONTAINER C02
+**/
+.c02 {
+  /********* ADD YOUR CODE  HERE **********/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /********* END OF YOUR CODE **********/
+  }
+  .c02 div {
+    background-color: orange;
+  }
+
+
+/**
+CONTAINER C03
+**/
+.c03 {
+  /********* ADD YOUR CODE  HERE **********/
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  /********* END OF YOUR CODE **********/
+}
+.c03 div {
+  background-color: green;
+}
+
+
+/**
+CONTAINER C04
+**/
+.c04 {
+  /********* ADD YOUR CODE  HERE **********/
+  display: flex;
+  flex-wrap: wrap;
+  /********* END OF YOUR CODE **********/
+}
+.c04 div {
+  background-color: blue;
+}
+/* Al ponerle wrap, los divs se situan en función de si caben o no en el contenedor.
+Si aumento el valor a flex-grow:3 no se hace más grande porqué no cabe en la misma linea.*/
+.c04 div:nth-child(1) {
+  flex-grow:2;
+}
+/*como no hay más elementos en la fila, al añadirle un valor 1,
+directamente coge el 100% de la capacidad del contenedor*/
+.c04 div:nth-child(9) {
+  flex-grow:1; 
+}
+
+/**
+CONTAINER C05
+**/
+.c05 div {
+  background-color: orangered;
+  padding: 20px 40px;
+  margin:3px;
+}
+  /********* ADD YOUR CODE  HERE **********/
+.c05 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c05 div:nth-child(1){
+  flex-grow: 2;
+}
+
+.c05 div:nth-child(2){
+  flex-grow: 3;
+}
+  /********* END OF YOUR CODE **********/
+
+
+/**
+CONTAINER C06
+**/
+.c06 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.c06 div {
+  padding: 20px 40px;
+  margin:5px;
+}
+/********* ADD YOUR CODE  HERE **********/
+.c06 div:nth-child(4){
+  order: -1;
+}
+
+.c06 div:nth-child(1){
+  align-self: flex-start;
+}
+
+.c06 div:nth-child(2){
+  align-self: flex-end;
+}
+  
+  /********* END OF YOUR CODE **********/
