@@ -3,10 +3,20 @@
      }
      
      #main {
-         height: auto;
+        height: auto;
          /********** ADD YOUR CODE HERE ***********/
-
+        display: flex;
          /********** END OF YOUR CODE ***********/
+     }
+
+     /*galaxy s9 hasta ipad*/
+     @media screen and (max-width: 700px){
+         #main{
+            flex-wrap: wrap;
+         }
+         #main>nav {
+             width: 100%;
+         }
      }
      
      #main>nav {
@@ -19,9 +29,9 @@
      
      #main>nav>div {
          text-align: center;
-         border: 1px solid white;
+         border: 1px solid white; /*para que quede como en la foto este border debería estar a la altura de la label nav a. ¿Es un error ? o lo debemos machacar?*/
          /********** ADD YOUR CODE HERE ***********/
-
+         margin: 5px;
          /********** END OF YOUR CODE ***********/
      }
      
@@ -33,15 +43,27 @@
      
      #contents {
          /********** ADD YOUR CODE HERE ***********/
-
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
          /********** END OF YOUR CODE ***********/
      }
      
      #contents>article {
          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
          /********** ADD YOUR CODE HERE ***********/
-
+         display: flex;
+         flex-direction: column;
+         padding: 5px;
+         box-sizing: border-box;
          /********** END OF YOUR CODE ***********/
+     }
+
+     /*ipad*/
+     @media screen and (min-width: 700px){
+     #contents>article {
+        width: 50%;
+     }
      }
      
      #contents>article img {
@@ -65,7 +87,10 @@
      #main>aside {
          background: lightgrey;
          /********** ADD YOUR CODE HERE ***********/
-
+         display: flex;
+         flex-direction: column;
+         width: 450px;
+         padding: 20px;
          /********** END OF YOUR CODE ***********/
      }
      
