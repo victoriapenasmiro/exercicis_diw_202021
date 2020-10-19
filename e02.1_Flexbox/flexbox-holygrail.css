@@ -29,7 +29,8 @@
      
      #main>nav>div {
          text-align: center;
-         border: 1px solid white; /*para que quede como en la foto este border debería estar a la altura de la label nav a. ¿Es un error ? o lo debemos machacar?*/
+         /*para que quede como en la foto este border debería estar a la altura de la label nav a. ¿Es un error ? o lo debemos machacar?*/
+         border: 1px solid white;
          /********** ADD YOUR CODE HERE ***********/
          margin: 5px;
          /********** END OF YOUR CODE ***********/
@@ -61,9 +62,9 @@
 
      /*ipad*/
      @media screen and (min-width: 700px){
-     #contents>article {
-        width: 50%;
-     }
+        #contents>article {
+            width: 50%;
+        }
      }
      
      #contents>article img {
