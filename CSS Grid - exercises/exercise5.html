@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 5 - z-index</title>
+    <style>
+      body {
+        margin: 40px;
+      }
+
+      .wrapper {
+        background-color: #fff;
+        color: #444;
+        /***** ADD YOUR CODE HERE *****/
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(6,1fr);
+        /*****  END OF YOUR CODE  *****/
+      }
+
+      .box {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 200%;
+      }
+
+      .i {
+        background-color: rgba(49, 121, 207, 0.5);
+        width: 200px;
+        height: 200px;
+        box-sizing: border-box;
+
+        /***** ADD YOUR CODE HERE *****/
+        grid-row: 2 / span 2;
+        grid-column: 3 / span 1;
+        z-index: 20;
+        margin-left: 55%;
+        /*****  END OF YOUR CODE  *****/
+      }
+
+      /***** ADD YOUR CODE HERE *****/
+      .a {
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 2;
+      }
+
+      .b {
+        grid-column: 4 / span 1;
+        grid-row: 1 / span 2;
+      }
+
+      .c {
+        grid-column: 3 / span 1;
+        grid-row: 3 / span 2;
+      }
+
+      .d {
+        grid-column: 4 / span 1;
+        grid-row: 3 / span 2;
+      }
+
+      /*****  END OF YOUR CODE  *****/
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="box a">A</div>
+      <div class="box b">B</div>
+      <div class="box c">C</div>
+      <div class="box d">D</div>
+      <div class="box i">I</div>
+    </div>
+  </body>
+</html>
